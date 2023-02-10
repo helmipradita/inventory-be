@@ -16,8 +16,8 @@ const productsControllers = {
     try {
       const page = parseInt(req.query.page) || 0;
       const limit = parseInt(req.query.limit) || 12;
-      const sortBy = req.query.sortBy || 'stock';
-      const sortOrder = req.query.sortOrder || 'DESC';
+      const sortBy = req.query.sortBy || 'updated_at';
+      const sortOrder = req.query.sortOrder || 'ASC';
       const search = req.query.search || '';
       const offset = page * limit;
 
